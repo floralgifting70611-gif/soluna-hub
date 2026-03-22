@@ -271,10 +271,14 @@ voice assistants, recommendation systems and smart robots.
 <h2>What is Artificial Intelligence?</h2>
 
 <p>
-Artificial Intelligence is a field of computer science
-focused on creating machines that can perform tasks
-that normally require human intelligence.
+Artificial Intelligence is one of the most powerful technologies
+of the modern world.
+<span class="more" style="display:none;">
+It is changing how humans interact with machines and shaping the future of technology.
+</span>
 </p>
+
+<button onclick="readMore(this)">Read more</button>
 
 </div>
 
@@ -341,5 +345,22 @@ Created by Ananya Baitha
 
 </footer>
 
+<script>
+function readMore(btn) {
+  var parent = btn.previousElementSibling;
+  var moreText = parent.querySelector(".more");
+
+  if (moreText.style.display === "inline") {
+    btn.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    btn.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
